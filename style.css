@@ -1,0 +1,175 @@
+body{
+    height: 100vh;
+    width: 100%;
+    background-color: #1fc8db;
+    background-image: linear-gradient(140deg, #EA0209 0%, #800174 50%, #20017A 75%);
+    overflow: hidden;
+}
+*{
+  overflow: hidden;
+}
+
+/* ---- reset ---- */
+
+body {
+    margin: 0;
+    font:normal 75% Arial, Helvetica, sans-serif;
+  }
+
+.main-container{
+   position: absolute;
+   width:60%; 
+   z-index: 100; 
+   margin:5% 20%;
+   font-family: 'Brush Script MT', cursive;
+   background-color: #00002255;
+   border-radius: 30px;
+   padding:60px;
+  
+}
+
+/* ---- Welcome Page ---- */
+  .welcome-text, .question-container{
+    font-size: 60px;
+    color: #ffffff;
+    text-align:center;
+    
+    
+    
+  }
+
+  .welcome-text p span{
+    background-color: #000000;
+    padding: 20px;
+    border: 3px solid #ffffff;
+    border-radius: 20px;
+  }
+
+  .welcome-text a{
+    text-decoration: none;
+    background-color: #1fc8db;
+    background-image: linear-gradient(140deg, #EA0209 0%, #800174 50%, #20017A 75%);
+    padding: 20px;
+    border: 3px solid #ffffff;
+    border-radius: 20px;
+    color:#ffffff;
+  }
+
+
+  /* ---- Questions Page ---- */
+
+.answer{
+    float: left;
+    width:50%;
+    font-size: 35px;
+    padding: 10px 20px;
+}
+
+.answer .answer-text{
+    background-color: #000000;
+    border: 2px solid #ffffff;
+    border-radius: 30px;
+}
+
+.answer .answer-text.show{
+    background-color: #29964a;
+    border: 2px solid #29964a;
+    border-radius: 30px;
+}
+
+/* ---- Finish Page ---- */
+.finish-game{
+    position: absolute;
+    bottom:20px;
+    right:20px;
+    color:#ffffff;
+    background-color: #00000055;
+    border-radius: 30px;
+    font-size: 20px;
+    padding:20px;
+    font-weight: bold;
+    font-family: 'Brush Script MT', cursive;
+    cursor: pointer;
+    text-decoration: none;
+}
+.left-question{
+    position: absolute;
+    top:40%;
+    left:10%;
+    color:#ffffff;
+    background-color: #00000055;
+    border-radius: 30px;
+    font-size: 20px;
+    font-weight: bold;
+    padding:20px;
+    font-family: 'Brush Script MT', cursive;
+    cursor: pointer;
+}
+
+
+.right-question{
+    position: absolute;
+    top:40%;
+    right:10%;
+    color:#ffffff;
+    background-color: #00000055;
+    border-radius: 30px;
+    font-size: 20px;
+    padding:20px;
+    font-family: 'Brush Script MT', cursive;
+    cursor: pointer;
+}
+  /* ---- particles.js container ---- */
+  canvas {
+    display: block;
+    vertical-align: bottom;
+  }
+  
+  
+  
+  #particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+   
+    background-image: url("");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+  }
+  
+  /* ---- stats.js ---- */
+  
+  .count-particles{
+    background: #000022;
+    position: absolute;
+    top: 48px;
+    left: 0;
+    width: 80px;
+    color: #13E8E9;
+    font-size: .8em;
+    text-align: left;
+    text-indent: 4px;
+    line-height: 14px;
+    padding-bottom: 2px;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: bold;
+  }
+  
+  .js-count-particles{
+    font-size: 1.1em;
+  }
+  
+  #stats,
+  .count-particles{
+    -webkit-user-select: none;
+  }
+  
+  #stats{
+    border-radius: 3px 3px 0 0;
+    overflow: hidden;
+  }
+  
+  .count-particles{
+    border-radius: 0 0 3px 3px;
+  }
